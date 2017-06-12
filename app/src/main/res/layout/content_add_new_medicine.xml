@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="medicine.example.com.dailyalert.addnewmedicine.AddNewMedicine"
+    tools:showIn="@layout/activity_add_new_medicine">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher"
+        android:layout_marginTop="@dimen/top_layout_margin"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/tv_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="05dp"
+        android:textStyle="bold"
+        android:textSize="@dimen/login"
+        android:text="@string/medicine"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/top_layout_margin"
+        android:layout_below="@+id/tv_title2"
+        android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.Editext"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_mname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the medicine name"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:clickable="false"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="@dimen/top_layout_margin"
+            android:layout_marginRight="@dimen/top_layout_margin"
+            android:gravity="start|center"
+            android:theme="@style/AppTheme.Editext"
+            android:textSize="@dimen/textsize"
+            android:inputType="textCapWords|textEmailAddress"
+            android:imeOptions="actionNext"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme.Editext"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_dose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select the dose of frequenry"
+            android:textColorHint="@color/grey"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@null"
+            android:singleLine="true"
+            android:clickable="false"
+            android:focusableInTouchMode="false"
+            android:focusable="false"
+            android:layout_marginTop="05dp"
+            android:layout_marginLeft="@dimen/top_layout_margin"
+            android:layout_marginRight="@dimen/top_layout_margin"
+            android:gravity="start|center"
+            android:theme="@style/AppTheme.Editext"
+            android:textSize="@dimen/textsize"
+            android:inputType="number"
+            android:imeOptions="actionDone"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.Editext"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the quantity of medicine at a time"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:clickable="false"
+                android:maxLength="1"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="@dimen/top_layout_margin"
+                android:layout_marginRight="@dimen/top_layout_margin"
+                android:gravity="start|center"
+                android:theme="@style/AppTheme.Editext"
+                android:textSize="@dimen/textsize"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.Editext"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_noofdoseperday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select the number of dose per day"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:maxLength="2"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="@dimen/top_layout_margin"
+                android:layout_marginRight="@dimen/top_layout_margin"
+                android:gravity="start|center"
+                android:theme="@style/AppTheme.Editext"
+                android:textSize="@dimen/textsize"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.Editext"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_remainder1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select the time for for Remainder1"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="@dimen/top_layout_margin"
+                android:layout_marginRight="@dimen/top_layout_margin"
+                android:gravity="start|center"
+                android:theme="@style/AppTheme.Editext"
+                android:textSize="@dimen/textsize"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_remainder2"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:theme="@style/AppTheme.Editext"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_remainder2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select the time for for Remainder2"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:focusableInTouchMode="false"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="@dimen/top_layout_margin"
+                android:layout_marginRight="@dimen/top_layout_margin"
+                android:gravity="start|center"
+                android:theme="@style/AppTheme.Editext"
+                android:textSize="@dimen/textsize"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.Editext"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_noofdosepurchased"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the no of dose purchased"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:clickable="false"
+                android:focusableInTouchMode="true"
+                android:focusable="true"
+                android:maxLength="2"
+                android:layout_marginTop="05dp"
+                android:layout_marginLeft="@dimen/top_layout_margin"
+                android:layout_marginRight="@dimen/top_layout_margin"
+                android:gravity="start|center"
+                android:theme="@style/AppTheme.Editext"
+                android:textSize="@dimen/textsize"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+</RelativeLayout>

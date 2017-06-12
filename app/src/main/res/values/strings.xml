@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Medi Track</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="name">Enter your name</string>
+    <string name="age">Enter your age</string>
+    <string name="sosname">Enter your sos name</string>
+    <string name="sosnumber">Enter your sos number</string>
+    <string name="login">Login Or Registration \n Screen</string>
+    <string name="upadte">Update user details</string>
+    <string name="medicine">Add new medicine</string>
+
+
+    <string name="btn_signin">Submit</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_userdetails">User Details</string>
+    '
+    <string name="btn_addmedicne">Add new medicine</string>
+    <string name="btn_sossetting">SOS settings page</string>
+    <string name="userdetails">User Details and Settings</string>
+
+
+    <string name="sossettingmsg"> Please add the details in incase of emergency.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_sos_setting">SosSetting</string>
+    <string name="title_activity_update_user_details">UpdateUserDetails</string>
+    <string name="title_activity_add_new_medicine">AddNewMedicine</string>
+</resources>
